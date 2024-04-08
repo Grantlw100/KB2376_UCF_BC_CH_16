@@ -1,0 +1,190 @@
+
+.site-header-nav-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    height: 10vh;  
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .site-header {
+    margin: 0;
+    flex-grow: 1; 
+  }
+  
+  .site-header h1 {
+    display: inline-flex; 
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    padding-right:5vw;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  
+  @keyframes shiftColorStrip {
+    from {
+      background-position: 0% 50%;
+    }
+    to {
+      background-position: -200% 50%;
+    }
+  }
+  
+  .animated-background-home {
+    animation: shiftColorStrip 10s infinite linear;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, 
+                                      var(--nav-item-bg-color) 0%, 
+                                      #140642 50%, 
+                                      var(--nav-item-bg-color) 100%);
+  }
+  
+    .animated-background-about {
+        animation: shiftColorStrip 10s infinite linear;
+        background-size: 200% 100%;
+        background-image: linear-gradient(to right, 
+                                        #243547 0%, 
+                                        #140642 50%, 
+                                        #243547 100%);
+    }
+  
+    .animated-background-projects {
+        animation: shiftColorStrip 10s infinite linear;
+        background-size: 200% 100%;
+        background-image: linear-gradient(to right, 
+                                        #000000 0%, 
+                                        #920000 50%, 
+                                        #000000 100%);
+    }
+  
+    .animated-background-contact {
+        animation: shiftColorStrip 10s infinite linear;
+        background-size: 200% 100%;
+        background-image: linear-gradient(to right, 
+                                        #964609 0%, 
+                                        #140642 50%, 
+                                        #964609 100%);
+    }
+  
+
+#master-nav {
+  flex-grow: 2; 
+  padding-right: 2vw;
+}
+
+#master-nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: left 20px;
+  justify-content: right
+}
+
+#master-nav li {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+  display: flex;
+  align-items: center;
+}
+
+
+
+#master-nav li:hover {
+  color:  black;
+  background-color: var(--nav-item-bg-color);
+  border-radius: 5px; 
+}
+
+#master-nav a:active {
+  background-color: #8b0000; 
+}
+
+@media (max-width: 1024px) (max-height: 1366px) {
+  
+  .site-header, nav ul {
+      flex-direction: column;
+  }
+  #master-nav li {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2px;
+    font-size: smaller;
+    border-radius: 5px;
+    justify-content: right;
+    padding-right:10px
+  }
+}
+
+@media (max-width: 850px) {
+  .site-header-nav-container {
+    min-height: 10vh;
+  }
+  .site-header, nav ul {
+      flex-direction: column;
+  }
+  #master-nav li {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2px;
+    font-size: smaller;
+    border-radius: 5px;
+    justify-content: right;
+    padding-right:10px
+  }
+}
+@media (max-width: 768px) {
+  .site-header-nav-container {
+    min-height: 10vh;
+  }
+  .site-header, nav ul {
+      flex-direction: column;
+  }
+  #master-nav li {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2px;
+    font-size: smaller;
+    border-radius: 5px;
+    justify-content: right;
+    padding-right:10px
+  }
+}
+
+
+@media (max-height: 768px) {
+  .site-header-nav-container {
+    min-height: 12vh;
+  }
+  .site-header, nav ul {
+      flex-direction: column;
+  }
+  #master-nav li {
+    margin:0;
+    padding: 0;
+    padding-bottom: 2px;
+    font-size: smaller;
+    border-radius: 5px;
+    justify-content: right;
+    padding-right:10px
+  }
+}
+
+.site-header, nav {
+  background-color: transparent;
+}

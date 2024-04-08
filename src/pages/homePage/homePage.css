@@ -1,0 +1,35 @@
+
+.bg-home {
+    background-image: url('chillin.gif');
+  }
+
+#home-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    font-size: min(max(14px, 1vw), 24px);
+    font-weight:900;
+    background-color: #d518b2a9;
+    position: absolute;
+    bottom: 0vh;
+    overflow-y: auto;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .bg-home {
+        background-image: url('alt-gif6.gif');
+    }
+    #home-about {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: min(max(12px, 1vw), 20px);
+    }
+  }
+  

@@ -1,0 +1,128 @@
+
+
+
+.bg-contact {
+    background-image: url('background.gif');
+    scrollbar-color: rgba(64, 64, 64, 0.8) rgba(0, 0, 0, 0.5); 
+  }
+
+
+  #contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: min(max(12px, 1vw), 20px);
+    margin: auto;
+  }
+
+  #contact-me-header {
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+    font-size: min(max(12px, 1vw), 20px);
+  }
+
+  header {
+    font-size: larger;
+  }
+  
+#contact-me-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+    font-size: min(max(12px, 1vw), 20px);
+  }
+  
+  #contact-me-form input, #contact-me-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(64, 64, 64, 0.8);
+    color: white;
+  }
+  
+  #button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--nav-item-bg-color);
+    color: white;
+    cursor: pointer;
+  }
+  
+  #button:hover {
+    background-color: #964609;
+    transition: background-color 0.5s ease;
+  }
+
+  @media (max-width: 1024px) {
+    .bg-contact {
+        background-image: url('alt-gif.gif');
+        background-position: center top 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .bg-contact {
+        background-image: url('alt-gif.gif');
+        background-position: center top 100px;
+    }
+    #contacts {
+        flex-direction: column;
+    }
+    #contact-me-header {
+        padding: 5px;
+        margin: 5px;
+        gap: 5px;
+        font-size: 14px;
+    }
+    #contact-me {
+        padding: 5px;
+        margin: 5px;
+        gap: 5px;
+    }
+    #cotact-me-form {
+        padding: 5px;
+        margin: 5px;
+        gap: 5px;
+    }
+
+  }
+  
+  @media (max-width: 600px) {
+    #socials, .bored {
+        flex-direction: column;
+    }
+  
+}
+
+@media (max-width: 768px) {
+    .bg-contact {
+        background-image: url('alt-gif.gif');
+        background-position: center top 100px;
+    }
+  
+}

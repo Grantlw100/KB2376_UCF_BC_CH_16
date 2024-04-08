@@ -1,0 +1,84 @@
+
+.bg-about {
+    background-image: url('hardwork.gif');
+  }
+  
+  @media (max-width: 768px) {
+    .bg-about {
+        background-image: url('alt-gif2.gif');
+        background-position: center top 100px;
+    }
+  }
+  
+  #careers {
+    height: 100vh; 
+    overflow-y: auto; 
+    scrollbar-color: rgba(64, 64, 64, 0.8) rgba(0, 0, 0, 0.5); 
+    padding-top: 60px; 
+    box-sizing: border-box;
+    gap: 20px;
+  }
+  
+  #careers header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #243547c7;
+    width: fit-content; 
+    padding: 2px;
+    border-radius: 10px;
+  }
+  
+  #careers h4 {
+    display: block;
+    background-color: #243547;
+    color: white;
+    width: fit-content;
+    padding: 2px;
+    border-radius: 10px;
+  }
+  
+  #careers div {
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #careers sub {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #243547c7;
+  } 
+  
+  #careers li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+  }
+  
+  #careers a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  .career {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 10px;
+    background-color: transparent;
+    color: white; 
+    }
+  
+  
+  
+  

@@ -1,0 +1,93 @@
+
+
+.bg-projects {
+  
+    background-image: url('desktop.gif');
+  }   
+  
+  
+  #projects {
+    display: flex;
+    flex-wrap: nowrap; 
+    position: relative;
+    top: 0;
+    overflow-x:scroll; 
+    scrollbar-color: rgba(64, 64, 64, 0.8) rgba(0, 0, 0, 0.5);
+    gap: 20px; 
+    justify-content: center;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.568);
+    width: 80vw;
+    margin-left:20vw;
+  }
+  
+  .project {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #Challenges {
+    overflow-x: auto;
+    scrollbar-color: rgba(64, 64, 64, 0.8) rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width:80vw;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    right: 0%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.568);
+  }
+  
+  
+  .challenge {
+    display: block;
+    flex: 0 0 auto;
+    width: 200px; 
+  }
+  
+  .project img, .challenge img {
+    display: none;
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .project:hover img, .challenge:hover img {
+    display: block; 
+    transform: scale(1); 
+  }
+  
+  .project:hover, .challenge:hover {
+    cursor: pointer; 
+    transform: scale(1.25); 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .bg-projects {
+        background-image: url('alt-gif3.gif');
+        background-position: left bottom 100px;
+    }
+    
+    #projects .project {
+        flex-direction: column;
+    }
+    
+    #projects .project {
+        flex-direction: column;
+    }
+  }
+
+  
+@media (max-width: 600px) { 
+    #projects {
+        justify-content: flex-start; 
+    }
+    .project {
+        flex: 0 0 auto; 
+        width: 50%;
+    }
+  }

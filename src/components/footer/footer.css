@@ -1,0 +1,125 @@
+
+
+.bored {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .fa-linkedin, .fa-github, .fa-facebook {
+    color: white; /* Initial color */
+    font-size: 2em; /* Increase icon size */
+    transition: color 0.5s ease, text-shadow 0.5s ease; /* Smooth transition for color and shadow */
+  }
+  
+  /* Icon hover styles */
+  .fa-linkedin:hover, .fa-github:hover, .fa-facebook:hover {
+    color: #8B0000; /* Blood red color on hover */
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.7);
+  }
+  .hidden {
+    display: none; 
+  }
+  
+  .footer-contacts a,
+  #bored-sub a {
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s ease;
+  }
+  
+  .footer-contacts p:hover,
+  #bored-sub a:hover,
+  footer span:hover {
+    color: #ccc; 
+    text-shadow: 0 0 10px #ccc;
+  }
+  
+  .footer-contacts,
+  #bored-sub {
+    width: 100%;
+  }
+  
+  .footer-contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+
+footer header {
+  font-size: 14px; /* Smaller text size */
+  color: white; /* Example color */
+}
+
+  
+  .footer-contacts.active,
+  #bored-sub.active {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    flex-wrap: wrap;
+  }
+
+  #footer-contacts section, #bored-sub section {
+    margin: 0 20px; /* Adds spacing between sections */
+  }
+  
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 50%; 
+    height: 50%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  :target {
+    display: block;
+  }
+  
+  
+  
+  footer {
+    justify-content: center;
+    align-items: center;
+    height:10vh;
+    width: 100%;
+    background-color: transparent;
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    z-index: 0; 
+    background-color: #000;
+  }
