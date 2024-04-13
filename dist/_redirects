@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = true # This ensures that even if other files are matched, index.html will be served
