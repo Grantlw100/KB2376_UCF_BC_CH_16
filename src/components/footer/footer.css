@@ -8,17 +8,20 @@
   }
 
   
-  .fa-linkedin, .fa-github, .fa-facebook {
-    color: white; /* Initial color */
-    font-size: 2em; /* Increase icon size */
-    transition: color 0.5s ease, text-shadow 0.5s ease; /* Smooth transition for color and shadow */
-  }
-  
-  /* Icon hover styles */
-  .fa-linkedin:hover, .fa-github:hover, .fa-facebook:hover {
-    color: #8B0000; /* Blood red color on hover */
+  .fa-linkedin, .fa-github, .fa-facebook, .fa-globe,
+.fa-linkedin:visited, .fa-github:visited, .fa-facebook:visited, .fa-globe:visited {
+    color: white; 
+    font-size: 2em; 
+    transition: color 0.5s ease, text-shadow 0.5s ease; 
+}
+
+.fa-linkedin:hover, .fa-github:hover, .fa-facebook:hover, .fa-globe:hover {
+    color: #8B0000; 
     text-shadow: 0 0 10px rgba(139, 0, 0, 0.7);
-  }
+}
+
+
+
   .hidden {
     display: none; 
   }

@@ -15,16 +15,20 @@
     scrollbar-color: rgba(64, 64, 64, 0.8) rgba(0, 0, 0, 0.5);
     gap: 20px; 
     justify-content: center;
-    height: 250px;
-    background-color: rgba(0, 0, 0, 0.568);
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.099);
     width: 80vw;
     margin-left:20vw;
+    min-height: 300px;
   }
   
-  .project {
-    display: block;
+  .project, .challenge {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
     justify-content: center;
     text-align: center;
+    transition: transform 0.3s ease-in-out; ;
   }
   
   #Challenges {
@@ -37,34 +41,52 @@
     position: absolute;
     bottom: 0;
     left: 20%;
-    right: 0%;
-    height: 20vh;
-    background-color: rgba(0, 0, 0, 0.568);
+    right:0;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.108);
   }
   
   
-  .challenge {
-    display: block;
+  .challenge, .project {
+    display: flex;
+    flex-direction: column;
     flex: 0 0 auto;
-    width: 200px; 
+    width: auto; 
+    margin-right: 20px;
+    position: relative; /* Make sure this is set if using pseudo-elements */
+    transition: box-shadow 0.5s ease-in-out; /* Smooth transition for box-shadow */
+    border-radius: 5px;
   }
+
+
   
   .project img, .challenge img {
-    display: none;
-    width: 100%; 
-    height: auto; 
+    visibility: hidden;
+    opacity: 0;
+    height: 150px; /* set a fixed height */
   }
   
   .project:hover img, .challenge:hover img {
-    display: block; 
-    transform: scale(1); 
+    visibility: visible;
+    opacity: 1;
   }
   
-  .project:hover, .challenge:hover {
-    cursor: pointer; 
-    transform: scale(1.25); 
-  }
   
+  .project:hover, .challenge:hover, h3 {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+    background-color: black;
+    border-radius: 5px;
+  }
+  .challenge p a, .project p a{
+    margin-right: 10px; /* Adjust the value as needed */
+    display: inline-block; /* ensures margin is respected */
+}
+
+/* You might also want to add a hover effect for better user experience */
+.challenge p a:hover, .project p a:hover{
+    opacity: 0.8; /* Example hover effect */
+}
+
   
   @media (max-width: 768px) {
     .bg-projects {

@@ -25,8 +25,8 @@ function ContactPage() {
           <section id="contact-me-form" className="hero is-primary">
             <header>Reach out with any comments, critiques, concerns, or inqueries</header>
             <p>Your response is most welcome!</p>
-            <form action="mailto:Grant.L.Williams@outlook.com" method="post" enctype="text/plain">
-                <label for="body">Body of your Email</label>
+            <form action="mailto:Grant.L.Williams@outlook.com" method="post" encType="text/plain">
+                <label htmlFor="body">Body of your Email</label>
                 <textarea id="body" placeholder="Your message here :). Attach an email so I can properly respond if you would like!"></textarea>
 
                 <input id='button' type="submit" value="Submit"></input>

@@ -11,7 +11,6 @@ function HomePage() {
     }, []);
     return (
         <div>
-            <img src='./assets/homepage.jpeg' alt="Grant Williams" />
 
             <section id="home-about" >
                 <p id="pulse-animation" >
