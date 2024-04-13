@@ -23,7 +23,7 @@ function AboutMePage() {
                     <h4>My Early Life</h4>
                     <sub>
                         <p>
-                            Abandoned as a puppy... Just kidding. I am the eldest of four siblings and was incredibly fortunate to be born into a loving family. My father’s military career meant that I lived in more states and cities than I ever anticipated, but this experience has significantly shaped who I am today. 
+                            Abandoned as a puppy... Just kidding. I am the oldest son out of four children and was incredibly fortunate to be born into a loving family. My father’s military career meant that I lived in more states and cities than I ever anticipated, but this experience has significantly shaped who I am today. 
                         </p>
                         <p>
                             Moving frequently from state to state and city to city made it challenging to maintain lasting friendships. Fortunately, I’ve always found it easy to make friends, so adapting wasn't a problem for me. I've grown accustomed to constant changes in my environment and lifestyle. As I matured, I gained a deeper understanding of regional cultures and their nuances.  

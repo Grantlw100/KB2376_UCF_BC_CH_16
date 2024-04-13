@@ -36,10 +36,10 @@ const ChallengeCard = ({ title, imageUrlKey, challengeUrl, repoUrl }) => {
         
             <h3>{title}</h3>
             <p>
-                <a href={repoUrl} title="View on GitHub"><i className="fab fa-github"></i></a>
+                <a href={repoUrl} title="View on GitHub"><i id='cardIcon' className="fab fa-github"></i></a>
             
                 {challengeUrl !== '#' && (
-                    <a href={challengeUrl} title="View Live Challenge"><i className="fas fa-globe"></i></a>
+                    <a href={challengeUrl} title="View Live Challenge"><i id='cardIcon' className="fas fa-globe"></i></a>
                 )}
             </p>
             </div>

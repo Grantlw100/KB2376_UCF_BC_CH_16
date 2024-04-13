@@ -115,7 +115,7 @@
   background-color: #8b0000; 
 }
 
-@media (max-width: 1024px) (max-height: 1366px) {
+@media (max-width: 1024px), (max-height: 1366px) {
   
   .site-header, nav ul {
       flex-direction: column;
@@ -127,7 +127,7 @@
     font-size: smaller;
     border-radius: 5px;
     justify-content: right;
-    padding-right:10px
+    padding-right:10px;
   }
 }
 
@@ -167,7 +167,7 @@
 }
 
 
-@media (max-height: 768px) {
+@media (max-height: 800px) {
   .site-header-nav-container {
     min-height: 12vh;
   }
@@ -178,7 +178,7 @@
     margin:0;
     padding: 0;
     padding-bottom: 2px;
-    font-size: smaller;
+    font-size:10px;
     border-radius: 5px;
     justify-content: right;
     padding-right:10px

@@ -71,6 +71,7 @@
     background-color: var(--nav-item-bg-color);
     color: white;
     cursor: pointer;
+    width: 100%;
   }
   
   #button:hover {

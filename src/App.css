@@ -12,10 +12,27 @@
   position: relative;
 }
 
-.bg-home, .bg-about, .bg-contact, .bg-projects {
+.bg-home, .bg-about, .bg-contact, .bg-resume, .bg-projects, .bg-404 {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+@keyframes glowing {
+  0% { color: rgb(247, 5, 5); }
+  50% { color: black; } 
+  100% { color: rgb(247, 5, 5); }
+}
+
+#cardIcon {
+  animation: glowing 6s infinite; 
+  transition: color 0.5s ease; 
+  font-size: 2em;
+}
+
+#cardIcon:hover  {
+  animation: none; 
+  color: rgb(247, 5, 5);
 }
 
 

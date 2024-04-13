@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div className="site-header-nav-container animated-background-home">
             <header className="site-header">
-                <h1>Access 'Grant'ed</h1>
+                <h1>Access "Grant"ed</h1>
             </header>
             <nav id="master-nav">
                 <ul id="master-list">
@@ -14,6 +14,7 @@ function Navbar() {
                     <li className="master-li"><Link to="/projects">Projects</Link></li>
                     <li className="master-li"><Link to="/aboutme">About Me</Link></li>
                     <li className="master-li"><Link to="/contact">Contact</Link></li>
+                    <li className="master-li"><Link to='/resume'>Resume</Link></li> 
                 </ul>
             </nav>
         </div>

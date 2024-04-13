@@ -6,6 +6,8 @@ import ProjectsPage from './pages/projects';
 import AboutMePage from './pages/aboutMe';
 import ContactPage from './pages/contact';
 import Footer from './components/footer';
+import NotFoundPage from './pages/404';
+import ResumePage from './pages/resume';
 import './App.css';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/aboutme" element={<AboutMePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
         <Footer />

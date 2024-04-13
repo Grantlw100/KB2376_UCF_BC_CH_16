@@ -1,0 +1,50 @@
+.bg-resume {
+    background-image: url('Big-Chillin.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This will keep the background in place while scrolling */
+  }
+
+#full-stack-developer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.356);
+  color: white;
+  border-radius: 10px;
+  font-size: min(max(12px, 1vw), 20px);
+  height: 500px;  
+  width: 80%; /* Adjust the width as needed */
+  margin: 20px auto; /* Center it with automatic horizontal margins */
+  overflow-y: auto; 
+}
+
+.download-resume {
+    background-color: #3b80e0; /* Your button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px; /* Spacing from the last element */
+  }
+  
+  .download-resume:hover {
+    background-color: #2a5d9c; /* A slightly darker color on hover */
+  }
+
+    @media (max-width: 768px) {
+        .bg-resume {
+            background-image: url('workin.gif');
+            background-position: center top 100px;
+        }
+    }
+
+    @media (max-height: 600px) {
+        #full-stack-developer {
+            height: 300px; /* Adjust the height as needed */
+        }
+    }

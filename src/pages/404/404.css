@@ -1,0 +1,27 @@
+.bg-404 {
+    background-image: url('Cruisin.gif');
+}
+
+#where {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+    border-radius: 10px;
+    font-size: min(max(12px, 1vw), 20px);
+    height: 20vh;
+    width: 50vw;
+
+}
+
+@media (max-width: 768px) {
+    .bg-404 {
+        background-image: url('redNight.gif');
+        background-position: center top 100px;
+    }
+}

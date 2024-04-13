@@ -16,11 +16,11 @@ const ProjectCard = ({ title, imageUrlKey, projectUrl, repoUrl }) => {
             <p>
                 {projectUrl !== '#' && (
                     <a href={projectUrl} title="View Live Project">
-                        <i className="fas fa-globe"></i>
+                        <i id='cardIcon' className="fas fa-globe"></i>
                     </a>
                 )}
                 <a href={repoUrl} title="View on GitHub">
-                    <i className="fab fa-github"></i>
+                    <i id='cardIcon' className="fab fa-github"></i>
                 </a>
             </p>
             <img src={projectImages[imageUrlKey]} alt={`Screenshot of ${title}`} />
