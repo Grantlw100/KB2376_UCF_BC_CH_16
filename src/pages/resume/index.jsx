@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import changeBackground from '../../utils/backgroundHelper';
 import './resume.css';
+const backendURL2 = import.meta.env.VITE_BACKEND_ROUTE_RESUME
 
 function ResumePage() {
     useEffect(() => {
@@ -66,7 +67,7 @@ function ResumePage() {
                         <p>Performed infantry duties, including reconnaissance, security, and tactical movements.</p>
                     </li>
                 </ul>
-                <a href="http://localhost:3001/download-resume" target="_blank" rel="noopener noreferrer" className="download-resume">
+                <a href={backendURL2} target="_blank" rel="noopener noreferrer" className="download-resume">
                     Download My Resume
                 </a>
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import changeBackground from '../../utils/backgroundHelper';
 import './contact.css';
+const backendURL = import.meta.env.VITE_BACKEND_ROUTE_CONTACT
 
 function ContactPage() {
   const [loading, setLoading] = useState(false);
@@ -25,7 +26,7 @@ function ContactPage() {
     };
 
     try {
-      const response = await fetch('http://localhost:3001/send-email', {
+      const response = await fetch(`${backendURL}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
