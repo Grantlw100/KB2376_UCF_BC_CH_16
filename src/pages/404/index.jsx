@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import changeBackground from '../../utils/backgroundHelper';
 import './404.css';
 
-function NotFoundPage() {
+export default function NotFoundPage() {
     useEffect(() => {
         document.documentElement.style.setProperty('--nav-item-bg-color', '#9819dd');
         changeBackground('bg-404');
@@ -22,4 +22,3 @@ function NotFoundPage() {
     );
 }
 
-export default NotFoundPage;

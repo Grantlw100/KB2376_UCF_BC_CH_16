@@ -9,7 +9,7 @@ const projectImages = {
     pj3
 };
 
-const ProjectCard = ({ title, imageUrlKey, projectUrl, repoUrl }) => {
+export default function ProjectCard({ title, imageUrlKey, projectUrl, repoUrl }) {
     return (
         <div className="project">
             <h3>{title}</h3>
@@ -20,7 +20,7 @@ const ProjectCard = ({ title, imageUrlKey, projectUrl, repoUrl }) => {
                     </a>
                 )}
                 <a href={repoUrl} title="View on GitHub">
-                    <i id='cardIcon' className="fab fa-github"></i>
+                    <i className="fab fa-github"></i>
                 </a>
             </p>
             <img src={projectImages[imageUrlKey]} alt={`Screenshot of ${title}`} />
@@ -29,4 +29,3 @@ const ProjectCard = ({ title, imageUrlKey, projectUrl, repoUrl }) => {
     );
 }
 
-export default ProjectCard;

@@ -29,7 +29,7 @@ const challengeImages = {
     Challenge13
 };
 
-const ChallengeCard = ({ title, imageUrlKey, challengeUrl, repoUrl }) => {
+export default function ChallengeCard({ title, imageUrlKey, challengeUrl, repoUrl }) {
     return (
         <div className="challenge">
             <img src={challengeImages[imageUrlKey]} alt={`Screenshot of ${title}`} />
@@ -46,4 +46,3 @@ const ChallengeCard = ({ title, imageUrlKey, challengeUrl, repoUrl }) => {
     );
 }
 
-export default ChallengeCard;

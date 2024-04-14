@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import changeBackground from '../../utils/backgroundHelper';
 import './homePage.css';
 
-function HomePage() {
+export default function HomePage() {
     useEffect(() => {
         changeBackground('bg-home');
         return () => {
@@ -33,5 +33,3 @@ function HomePage() {
         </div>
     );
 }
-
-export default HomePage;

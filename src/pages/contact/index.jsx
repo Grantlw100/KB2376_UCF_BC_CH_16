@@ -3,7 +3,7 @@ import changeBackground from '../../utils/backgroundHelper';
 import './contact.css';
 const backendURL = import.meta.env.VITE_BACKEND_ROUTE_CONTACT
 
-function ContactPage() {
+export default function ContactPage() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -90,5 +90,3 @@ function ContactPage() {
     </div>
   );
 }
-
-export default ContactPage;

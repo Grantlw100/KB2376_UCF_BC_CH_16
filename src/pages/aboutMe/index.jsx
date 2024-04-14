@@ -3,7 +3,7 @@ import changeBackground from "../../utils/backgroundHelper";
 import './aboutMe.css';
 import me from './me.jpg';
 
-function AboutMePage() {
+export default function AboutMePage() {
     useEffect(() => {
         document.documentElement.style.setProperty('--nav-item-bg-color', '#243547');
         changeBackground('bg-about');
@@ -138,6 +138,4 @@ function AboutMePage() {
         </div>
     );
 }
-
-export default AboutMePage;
 

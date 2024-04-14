@@ -4,7 +4,7 @@ import ChallengeCard from '../../components/ChallengeCard';
 import changeBackground from '../../utils/backgroundHelper';
 import './projects.css';
 
-function ProjectsPage() {
+export default function ProjectsPage() {
     useEffect(() => {
         document.documentElement.style.setProperty('--nav-item-bg-color', '#791028');
         changeBackground('bg-projects');
@@ -54,5 +54,3 @@ function ProjectsPage() {
         </div>
     );
 }
-
-export default ProjectsPage;

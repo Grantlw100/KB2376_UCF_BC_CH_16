@@ -3,7 +3,7 @@ import changeBackground from '../../utils/backgroundHelper';
 import './resume.css';
 const backendURL2 = import.meta.env.VITE_BACKEND_ROUTE_RESUME
 
-function ResumePage() {
+export default function ResumePage() {
     useEffect(() => {
         document.documentElement.style.setProperty('--nav-item-bg-color', '#3b80e0');
         changeBackground('bg-resume');
@@ -77,5 +77,3 @@ function ResumePage() {
         </div>
     );
 }
-
-export default ResumePage;

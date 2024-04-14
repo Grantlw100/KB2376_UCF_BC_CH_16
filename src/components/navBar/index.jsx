@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import './navBar.css';
 
-function Navbar() {
+export default function Navbar() {
     return (
         <div className="site-header-nav-container animated-background-home">
             <header className="site-header">
@@ -21,4 +21,3 @@ function Navbar() {
     );
 }
 
-export default Navbar;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './footer.css';
 
-function Footer() {
+export default function Footer() {
     const [showBoredSub, setShowBoredSub] = useState(false);
 
     const toggleBoredSub = () => {
@@ -49,5 +49,3 @@ function Footer() {
         </div>
     );
 }
-
-export default Footer;
