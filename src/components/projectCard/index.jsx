@@ -20,7 +20,7 @@ export default function ProjectCard({ title, imageUrlKey, projectUrl, repoUrl })
                     </a>
                 )}
                 <a href={repoUrl} title="View on GitHub">
-                    <i className="fab fa-github"></i>
+                    <i id='cardIcon' className="fab fa-github"></i>
                 </a>
             </p>
             <img src={projectImages[imageUrlKey]} alt={`Screenshot of ${title}`} />
