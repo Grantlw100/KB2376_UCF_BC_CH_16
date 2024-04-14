@@ -19,6 +19,18 @@
 
 }
 
+#where Link:visited {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#where Link:hover {
+    color: red;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
 @media (max-width: 768px) {
     .bg-404 {
         background-image: url('redNight.gif');
