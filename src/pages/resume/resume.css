@@ -5,6 +5,12 @@
     background-attachment: fixed; /* This will keep the background in place while scrolling */
   }
 
+  h1, h2, h3 { 
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    background-color: black;
+    border-radius: 5px;
+  }
+
 #full-stack-developer {
   display: flex;
   flex-direction: column;

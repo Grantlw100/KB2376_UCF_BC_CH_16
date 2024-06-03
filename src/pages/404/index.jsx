@@ -18,7 +18,7 @@ export default function NotFoundPage() {
                 <h1>404</h1>
                 <h2>Page Not Found</h2>
                 <p>Looks like you may be lost Friend. Do you need help finding home?</p>
-                <Link to="/">Go Home</Link>
+                <p id="home" ><Link to="/">Go Home</Link></p>
             </section>
         </div>
     );
